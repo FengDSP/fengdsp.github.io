@@ -33,4 +33,4 @@ theme = 'paper'
     weight = 2
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
