@@ -1,22 +1,28 @@
 baseURL = 'https://fengdsp.github.io/'
 languageCode = 'en-us'
 title = "Feng's Blog"
-theme = 'paper'
+theme = 'PaperMod'
+paginate = 5
 
 [params]
-  # color style
-  color = 'linen' # linen, wheat, gray, light
+  env = 'production'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
 
-  # header social icons
-  github = 'FengDSP'
+  math = true
 
-  # home page profile
-  name = "Feng"
-  bio = "Building AI agent systems. Writing about architecture, tools, and lessons learned."
+  [params.homeInfoParams]
+    Title = "Feng"
+    Content = "Building AI agent systems. Writing about architecture, tools, and lessons learned."
 
-  # misc
-  disableHLJS = false
-  math = true # enable KaTeX math typesetting globally
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/FengDSP"
 
 [taxonomies]
   tag = "tags"
@@ -28,9 +34,13 @@ theme = 'paper'
     url = "/posts/"
     weight = 1
   [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 2
+    weight = 3
 
 [outputs]
   home = ["HTML", "RSS"]

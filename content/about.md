@@ -21,4 +21,4 @@ This blog is where I document what I learn along the way — architecture patter
 
 ---
 
-This blog is built with [Hugo](https://gohugo.io) using the [Paper](https://github.com/nanxiaobei/hugo-paper) theme.
+This blog is built with [Hugo](https://gohugo.io) using the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
